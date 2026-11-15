@@ -30,4 +30,12 @@ uv run --with pandas,pyarrow,matplotlib,jupyterlab jupyter lab
 ```
 Notebook und die Dateien aus `data/clean/` nebeneinander ablegen – Zelle 1 findet die Dateien zuerst lokal, sonst lädt sie sie von hier.
 
-© 2026 Herbert Mühlburger. Material für die Lehrveranstaltung; Fragen bitte über das Moodle-Forum der LV.
+## Lizenz
+
+© 2026 Herbert Mühlburger, AI-Trust ZT GmbH.
+
+- **Inhalte und Daten** (Texte, Lernmaterial, der synthetische Datensatz in `data/`): [Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0)](LICENSE-CONTENT). Namensnennung: „Herbert Mühlburger, Big Data (BID), FH CAMPUS 02, WS 2026/27“ mit Link auf dieses Repository.
+- **Code** (Code-Zellen der Notebooks, Skripte): [Apache License 2.0](LICENSE).
+- Nicht Teil der Lizenz: Logos und Marken sowie gekennzeichnete Zitate aus fremden Quellen.
+
+Fragen zur Lehrveranstaltung bitte über das Moodle-Forum der LV.
