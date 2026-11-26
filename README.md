@@ -9,7 +9,7 @@ Am Ende zählt die Klausur in Moodle, ohne Agent. Dein Agent ist hier Coach, nic
 ## So startest du
 
 1. Öffne das Lernpaket des Termins: [`lernpakete/T1/README.md`](lernpakete/T1/README.md); T2 bis T5 kommen je eine Woche vor dem Termin dazu.
-2. Mit Agent: Gib ihm die Datei `lernpakete/Tn/Tn_komplett.md` (hochladen, einfügen oder den Link nennen) und beginne mit dem Rahmenprompt aus `lernpakete/Tn/prompts.md`.
+2. Mit Agent: Gib ihm die Datei `lernpakete/Tn/Tn_komplett.md` (hochladen, einfügen oder den Link nennen; für T1: https://raw.githubusercontent.com/muehlburger/bid-ws2026/main/lernpakete/T1/T1_komplett.md) und beginne mit dem Rahmenprompt aus `lernpakete/Tn/prompts.md`. Die Datei enthält alles außer den Ausblick-Seiten; dein Agent sieht die Unterordner des Repos nicht, braucht sie aber auch nicht.
 3. Ohne Agent: Lies den Konzeptpfad (`konzepte.md`), mach die Selbsttests auf den Konzeptseiten, bearbeite `aufgaben.md` und vergleiche mit der Selbstkontrolle am Ende der Datei.
 4. Zum Schluss immer ohne Agent: `so-fragt-die-klausur.md`.
 
@@ -60,6 +60,17 @@ Synthetischer Warenwirtschafts-Export eines Modehändlers: 12 Filialen (Filiale 
 Wichtigste Spalten: `date_bestand_ums` (Buchungstag), `variantennummer8`, `filialnummer3`, `verkaufspreis_ifw` (regulärer Listenpreis), `umsatz_menge_mk9` (Stück, negativ = Retoure), `umsatz_wert_ifw` (Umsatz = Menge × regulärer Preis − Reduktionen), `kz_aktion` (A = Aktion, R = regulär).
 
 Die Daten sind mit einem Generator erzeugt (Seed 42) und enthalten keine Kundendaten; Ähnlichkeiten mit realen Unternehmen sind zufällig.
+
+### Andere Daten zum Üben
+
+Wer mit einem zweiten Datensatz üben will, findet auf Kaggle öffentliche Retail-Wettbewerbe mit echten, anonymisierten Verkaufsdaten; sie passen zu den Fragen dieser LV (Absatzprognose je Filiale und Artikel, Kalender- und Aktionseffekte):
+
+- [Store Sales, Time Series Forecasting](https://www.kaggle.com/competitions/store-sales-time-series-forecasting) (Corporación Favorita, Ecuador): Tagesabsatz je Filiale und Warengruppe, mit Ölpreis, Feiertagen und Aktionen.
+- [M5 Forecasting, Accuracy](https://www.kaggle.com/competitions/m5-forecasting-accuracy) (Walmart, USA): Tagesabsatz je Artikel und Filiale über mehrere Jahre, hierarchisch von Artikel bis Bundesstaat.
+- [Rossmann Store Sales](https://www.kaggle.com/competitions/rossmann-store-sales) (Deutschland): Tagesumsatz je Filiale mit Aktionen, Feiertagen und Wettbewerbern.
+- [Walmart Recruiting, Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting): Wochenumsatz je Filiale und Abteilung.
+
+Die Daten liegen bei Kaggle unter den Regeln des jeweiligen Wettbewerbs (Konto nötig); sie sind nicht Teil dieses Repositories und werden in den Aufgaben nicht vorausgesetzt. Beim Arbeiten mit einem Agenten gilt auch dort: keine Daten hochladen, die nicht öffentlich sind.
 
 ## Lokal statt Colab
 

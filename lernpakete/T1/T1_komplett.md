@@ -10,13 +10,13 @@ quellen: []
 klausurrelevant: true
 sprache: de-AT
 erzeugt: true
-erzeugt_aus: [README.md:0d849a2bd16e, begriffe.md:af03b5d85e17, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:a7469a9f6bef, konzepte/big-data-5v.md:92907bc9fcdf, konzepte/distributed-vs-single-node.md:0a7f37487509, konzepte/kap-02.md:9fd405b057d4, konzepte/fault-vs-failure.md:15ec22346c40, konzepte/batch-vs-stream.md:2f028d737016, konzepte/timeliness.md:e1f60dd4297b, konzepte/scalability.md:01ce698d8e0a, konzepte/scaling-up-vs-scaling-out.md:30dbf5cf8a34, konzepte/response-time.md:3b8247ca7a53, konzepte/maintainability.md:a951392a4cb3, konzepte/simplicity.md:4fa2597771fa, konzepte/operational-vs-analytical-systems.md:00ca96b08192, konzepte/crisp-dm.md:68b5202bb65c, konzepte/system-of-record.md:0b2844d29288, konzepte/derived-data.md:31a255f701e7, konzepte/skalenniveau-und-kenngroessen.md:b856549a0c09, konzepte/percentiles.md:a566c7936ef1, aufgaben.md:39c3cd7a7c83, uebung-notebook.md:30554b81b1a1, so-fragt-die-klausur.md:8790181296a9, prompts.md:58c77b074ffb]
+erzeugt_aus: [README.md:0d849a2bd16e, begriffe.md:af03b5d85e17, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:a7469a9f6bef, konzepte/big-data-5v.md:92907bc9fcdf, konzepte/distributed-vs-single-node.md:0a7f37487509, konzepte/kap-02.md:9fd405b057d4, konzepte/fault-vs-failure.md:15ec22346c40, konzepte/batch-vs-stream.md:2f028d737016, konzepte/timeliness.md:e1f60dd4297b, konzepte/scalability.md:01ce698d8e0a, konzepte/scaling-up-vs-scaling-out.md:30dbf5cf8a34, konzepte/response-time.md:3b8247ca7a53, konzepte/maintainability.md:a951392a4cb3, konzepte/simplicity.md:4fa2597771fa, konzepte/operational-vs-analytical-systems.md:00ca96b08192, konzepte/crisp-dm.md:68b5202bb65c, konzepte/system-of-record.md:0b2844d29288, konzepte/derived-data.md:31a255f701e7, konzepte/skalenniveau-und-kenngroessen.md:b856549a0c09, konzepte/percentiles.md:a566c7936ef1, aufgaben.md:39c3cd7a7c83, uebung-notebook.md:30554b81b1a1, so-fragt-die-klausur.md:8790181296a9, prompts.md:e87be97311a9]
 stand: 2026-11-25
 version: 1
 ---
 # Lernpaket T1 in einer Datei
 
-Alle Teile des Lernpakets hintereinander, für den Upload in einen AI-Agenten oder zum Lesen am Stück. Erzeugt mit build_lernpaket.py; nicht von Hand ändern. Für deinen Agenten gilt der Rahmenprompt am Ende der Datei: Er ist Coach, nicht Ghostwriter.
+Alle Teile des Lernpakets hintereinander, für den Upload in einen AI-Agenten oder zum Lesen am Stück: README, Glossar, Konzeptpfad, die Konzeptseiten mit Status Pflicht und Kern, Aufgaben, Übung, So fragt die Klausur, Prompts. Seiten mit Status Ausblick sind nicht enthalten; Links darauf führen ins Repo. Diese Datei im Repo: https://raw.githubusercontent.com/muehlburger/bid-ws2026/main/lernpakete/T1/T1_komplett.md. Erzeugt mit build_lernpaket.py; nicht von Hand ändern. Für deinen Agenten gilt der Rahmenprompt am Ende der Datei: Er ist Coach, nicht Ghostwriter.
 
 <a id="readme"></a>
 
@@ -74,13 +74,13 @@ Richtwert für zu Hause: rund eine Stunde für dieses Paket, dazu Quiz Q1 in Moo
 | [uebung-notebook.md](#uebung-notebook) | Aufgabe 3: praktische Übung mit dem Notebook, mit Papierfassung |
 | [so-fragt-die-klausur.md](#so-fragt-die-klausur) | die acht Beispielitems K1 bis K8 mit Lösungen |
 | [prompts.md](#prompts) | Rahmenprompt und Prompts für deinen Agenten |
-| [T1_komplett.md](T1_komplett.md) | alles in einer Datei, zum Hochladen in deinen Agenten (erzeugt) |
+| [T1_komplett.md](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/T1_komplett.md) | alles in einer Datei, zum Hochladen in deinen Agenten (erzeugt) |
 
 Datensatz und Notebook liegen in diesem Repo unter `data/clean/` und `notebooks/`; der Einstieg steht in der [README des Repos](#readme).
 
 ## Regeln für den Agenten
 
-Dein AI-Agent (Claude, ChatGPT oder ein anderer) ist Coach, nicht Ghostwriter: Er erklärt, prüft deine Begründung und fragt dich ab. In den Phasen „ohne Agent“ bleiben die Geräte zu, weil die Klausur ohne Agent läuft. Gib nie Daten deines Arbeitgebers in einen Agenten; der Modehändler und der synthetische Datensatz genügen für alles. Die ausführlichen Regeln stehen in der [AGENTS.md des Repos](../../AGENTS.md).
+Dein AI-Agent (Claude, ChatGPT oder ein anderer) ist Coach, nicht Ghostwriter: Er erklärt, prüft deine Begründung und fragt dich ab. In den Phasen „ohne Agent“ bleiben die Geräte zu, weil die Klausur ohne Agent läuft. Gib nie Daten deines Arbeitgebers in einen Agenten; der Modehändler und der synthetische Datensatz genügen für alles. Die ausführlichen Regeln stehen in der [AGENTS.md des Repos](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/../../AGENTS.md).
 
 <a id="begriffe"></a>
 
@@ -117,7 +117,7 @@ Erzeugt aus den Konzeptseiten des Pakets (Abschnitt „In einem Satz“); nicht 
 
 # Konzeptpfad T1
 
-Lies die Seiten in dieser Reihenfolge. **Pflicht** und **Kern** sind klausurrelevant und stehen auch in [T1_komplett.md](T1_komplett.md); **Ausblick** ist Vertiefung für Interessierte und wird in T1 nicht geprüft. Die Leitfrage sagt, worum es im Termin geht; die Seite erklärt das Konzept zeitlos. Jede Seite endet mit drei Selbsttestfragen.
+Lies die Seiten in dieser Reihenfolge. **Pflicht** und **Kern** sind klausurrelevant und stehen auch in [T1_komplett.md](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/T1_komplett.md); **Ausblick** ist Vertiefung für Interessierte und wird in T1 nicht geprüft. Die Leitfrage sagt, worum es im Termin geht; die Seite erklärt das Konzept zeitlos. Jede Seite endet mit drei Selbsttestfragen.
 
 ## Zyklus 1: Wann wird aus einem Datenproblem ein Architekturproblem?
 
@@ -136,9 +136,9 @@ Lies die Seiten in dieser Reihenfolge. **Pflicht** und **Kern** sind klausurrele
 | 11 | [Maintainability](#maintainability) | Wer betreibt und ändert das System in fünf Jahren? | L1 | Kern | 4 min |
 | 12 | [Simplicity](#simplicity) | Welche Komplexität ist wesentlich, welche zufällig? | L10 | Kern | 4 min |
 | 13 | [Operational vs. Analytical Systems](#operational-vs-analytical-systems) | Ist die Prognose ein operativer oder ein analytischer Zugriff? | L1 | Kern | 5 min |
-| 14 | [Load](konzepte/load.md) | Wie rechnet man Geschäftszahlen in Last pro Sekunde um? | L1 | Ausblick | 5 min |
-| 15 | [Fault Tolerance](konzepte/fault-tolerance.md) | Wie verhindert man, dass aus einem Fault ein Failure wird? | L1 | Ausblick | 5 min |
-| 16 | [Column-Oriented Storage](konzepte/column-oriented-storage.md) | Warum schafft ein Rechner 50 Mio. Zeilen? (Vertiefung, Stoff von T2) | L10 | Ausblick | 5 min |
+| 14 | [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md) | Wie rechnet man Geschäftszahlen in Last pro Sekunde um? | L1 | Ausblick | 5 min |
+| 15 | [Fault Tolerance](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fault-tolerance.md) | Wie verhindert man, dass aus einem Fault ein Failure wird? | L1 | Ausblick | 5 min |
+| 16 | [Column-Oriented Storage](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/column-oriented-storage.md) | Warum schafft ein Rechner 50 Mio. Zeilen? (Vertiefung, Stoff von T2) | L10 | Ausblick | 5 min |
 
 ## Zyklus 2: CRISP-DM und das Case Canvas
 
@@ -154,8 +154,8 @@ Lies die Seiten in dieser Reihenfolge. **Pflicht** und **Kern** sind klausurrele
 |---|---|---|---|---|---|
 | 20 | [Skalenniveau und Kenngrößen](#skalenniveau-und-kenngroessen) | Welches Diagramm und welche Kenngröße passen zum Merkmal? Was ist der Sonntag ohne Zeile? | L8 | Pflicht | 6 min |
 | 21 | [Percentiles](#percentiles) | Warum beschreiben Median und p95 eine Verteilung besser als der Mittelwert? | L8 | Pflicht | 5 min |
-| 22 | [Star Schema](konzepte/star-schema.md) | Wie ist der Übungsdatensatz aufgebaut? (Vertiefung, Stoff von T2) | L8 | Ausblick | 4 min |
-| 23 | [Selbsttest Kapitel 1 und 2](konzepte/fragen-kap-01-02.md) | Zwölf Fragen in den Formen der Klausur | L1 | Ausblick | 15 min |
+| 22 | [Star Schema](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/star-schema.md) | Wie ist der Übungsdatensatz aufgebaut? (Vertiefung, Stoff von T2) | L8 | Ausblick | 4 min |
+| 23 | [Selbsttest Kapitel 1 und 2](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fragen-kap-01-02.md) | Zwölf Fragen in den Formen der Klausur | L1 | Ausblick | 15 min |
 
 Lesezeit für Pflicht und Kern: rund 80 Minuten, verteilt auf die Woche vor und nach dem Termin. Wer wenig Zeit hat, liest die Pflichtseiten und macht die Selbsttests; das reicht für Q1.
 
@@ -275,7 +275,7 @@ Größenordnungen, keine Messwerte: rund 1,9 Mio. Umsatzzeilen je Quartal für 4
 
 - Jedes V ist eine Frage, keine Antwort. Erst alle fünf stellen, dann sagen, welche relevant sind und welche nicht.
 - Aus einem relevanten V folgt noch keine Architektur; das klärt die [Entscheidungskette](#entscheidungskette).
-- Preis der 5V: Sie sind grob. Für eine Entscheidung braucht man Zahlen ([Load](konzepte/load.md)).
+- Preis der 5V: Sie sind grob. Für eine Entscheidung braucht man Zahlen ([Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md)).
 
 ## Typische Fehlvorstellungen
 
@@ -305,7 +305,7 @@ Größenordnungen, keine Messwerte: rund 1,9 Mio. Umsatzzeilen je Quartal für 4
 ## Verwandt
 
 - [Entscheidungskette](#entscheidungskette)
-- [Load](konzepte/load.md)
+- [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md)
 - [Timeliness](#timeliness)
 - [Verteilt vs. Single-Node](#distributed-vs-single-node)
 
@@ -334,7 +334,7 @@ Gründe, die Verteilung erzwingen oder rechtfertigen:
 
 - Die Aufgabe ist von Natur aus verteilt (mehrere Standorte, mehrere Geräte).
 - Mehrere Cloud-Dienste arbeiten zusammen.
-- [Fault Tolerance](konzepte/fault-tolerance.md): Fällt eine Maschine aus, übernimmt eine andere.
+- [Fault Tolerance](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fault-tolerance.md): Fällt eine Maschine aus, übernimmt eine andere.
 - [Scalability](#scalability): Datenmenge oder Last übersteigen eine Maschine.
 - Kurze Wege zu weltweit verteilten Nutzerinnen.
 - Elastizität bei stark schwankender Last.
@@ -346,7 +346,7 @@ Moderne Einzelrechner haben viele Kerne, viel Hauptspeicher und schnelle Platten
 
 ## Am Modehändler
 
-Der Händler ist an einer Stelle zwangsläufig verteilt: 42 Filialen und ein Onlineshop buchen an verschiedenen Orten und müssen einen gemeinsamen Bestand ergeben. Der Shop soll außerdem den Ausfall eines Servers überstehen. Die nächtliche Absatzprognose dagegen passt auf eine Maschine: Rund 50 Mio. Umsatzzeilen in [spaltenorientierter Speicherung](konzepte/column-oriented-storage.md) verarbeitet ein Werkzeug wie DuckDB auf einem gut ausgestatteten Rechner.
+Der Händler ist an einer Stelle zwangsläufig verteilt: 42 Filialen und ein Onlineshop buchen an verschiedenen Orten und müssen einen gemeinsamen Bestand ergeben. Der Shop soll außerdem den Ausfall eines Servers überstehen. Die nächtliche Absatzprognose dagegen passt auf eine Maschine: Rund 50 Mio. Umsatzzeilen in [spaltenorientierter Speicherung](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/column-oriented-storage.md) verarbeitet ein Werkzeug wie DuckDB auf einem gut ausgestatteten Rechner.
 
 ## Trade-offs und Entscheidungsregel
 
@@ -411,13 +411,13 @@ Für diese Lehrveranstaltung ist es das wichtigste Grundlagenkapitel: Die Anford
 | Eigenschaft | Leitfrage | Seiten |
 |---|---|---|
 | **Performance** | Wie schnell antwortet das System, und wie viel schafft es? | [Response Time](#response-time), Throughput, [Percentiles](#percentiles), SLO und SLA |
-| **Reliability** | Arbeitet es korrekt weiter, wenn etwas schiefgeht? | [Fault vs. Failure](#fault-vs-failure), [Fault Tolerance](konzepte/fault-tolerance.md) |
-| **Scalability** | Was geschieht, wenn die Last wächst? | [Load](konzepte/load.md), [Scalability](#scalability), Shared-Nothing, [Scaling up vs. Scaling out](#scaling-up-vs-scaling-out) |
+| **Reliability** | Arbeitet es korrekt weiter, wenn etwas schiefgeht? | [Fault vs. Failure](#fault-vs-failure), [Fault Tolerance](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fault-tolerance.md) |
+| **Scalability** | Was geschieht, wenn die Last wächst? | [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md), [Scalability](#scalability), Shared-Nothing, [Scaling up vs. Scaling out](#scaling-up-vs-scaling-out) |
 | **Maintainability** | Lässt es sich über Jahre betreiben, verstehen und ändern? | [Maintainability](#maintainability) (mit Operability und Evolvability), [Simplicity](#simplicity) |
 
 ## Die Fallstudie des Kapitels
 
-Das Kapitel beginnt mit einem Rechenbeispiel aus einem sozialen Netzwerk: Soll die Startseite bei jedem Aufruf frisch aus den Tabellen zusammengestellt oder beim Schreiben vorbereitet werden? Die Lehre daraus: Lastzahlen entscheiden über die Architektur, und vorbereitete Ergebnisse verlagern Arbeit vom Lesen zum Schreiben. In diesem Wiki steht dieselbe Überlegung am Modehändler in [Load](konzepte/load.md) und Materialized View.
+Das Kapitel beginnt mit einem Rechenbeispiel aus einem sozialen Netzwerk: Soll die Startseite bei jedem Aufruf frisch aus den Tabellen zusammengestellt oder beim Schreiben vorbereitet werden? Die Lehre daraus: Lastzahlen entscheiden über die Architektur, und vorbereitete Ergebnisse verlagern Arbeit vom Lesen zum Schreiben. In diesem Wiki steht dieselbe Überlegung am Modehändler in [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md) und Materialized View.
 
 ## Am Modehändler
 
@@ -428,7 +428,7 @@ Das Kapitel beginnt mit einem Rechenbeispiel aus einem sozialen Netzwerk: Soll d
 
 ## Lesehinweis
 
-- Reihenfolge für den Einstieg: [Response Time](#response-time), [Percentiles](#percentiles), SLO und SLA, dann [Fault vs. Failure](#fault-vs-failure), [Load](konzepte/load.md), [Scalability](#scalability), zuletzt [Simplicity](#simplicity).
+- Reihenfolge für den Einstieg: [Response Time](#response-time), [Percentiles](#percentiles), SLO und SLA, dann [Fault vs. Failure](#fault-vs-failure), [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md), [Scalability](#scalability), zuletzt [Simplicity](#simplicity).
 - Wer aus der Statistik kommt, beginnt mit [Percentiles](#percentiles): Antwortzeiten sind rechtsschief verteilt, deshalb Median und Perzentile statt Mittelwert.
 - Wer aus dem Management kommt, beginnt mit SLO und SLA und [Maintainability](#maintainability).
 - Achtung auf einen häufigen Kurzschluss: Eine kurze Response Time sagt nichts darüber, wie aktuell die gezeigten Daten sind. Das ist eine eigene Anforderung, siehe [Timeliness](#timeliness).
@@ -436,7 +436,7 @@ Das Kapitel beginnt mit einem Rechenbeispiel aus einem sozialen Netzwerk: Soll d
 
 ## Selbsttest
 
-[Selbsttest zu Kapitel 1 und 2](konzepte/fragen-kap-01-02.md)
+[Selbsttest zu Kapitel 1 und 2](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fragen-kap-01-02.md)
 
 ## Quelle und Weiterlesen
 
@@ -478,7 +478,7 @@ flowchart LR
   T -- nein --> X[Failure: SLO verfehlt]
 ```
 
-Eine Komponente, deren Fault unmittelbar zum Failure führt, heißt *Single Point of Failure*. Das Abfangen leistet [Fault Tolerance](konzepte/fault-tolerance.md).
+Eine Komponente, deren Fault unmittelbar zum Failure führt, heißt *Single Point of Failure*. Das Abfangen leistet [Fault Tolerance](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fault-tolerance.md).
 
 ## Am Modehändler
 
@@ -522,7 +522,7 @@ Eine Komponente, deren Fault unmittelbar zum Failure führt, heißt *Single Poin
 
 ## Verwandt
 
-- [Fault Tolerance](konzepte/fault-tolerance.md)
+- [Fault Tolerance](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fault-tolerance.md)
 - SLO und SLA
 - Replication
 - [Wegweiser Kapitel 2](#kap-02)
@@ -716,7 +716,7 @@ Ein System, das heute zuverlässig läuft, tut das bei zehnfacher Last nicht aut
 
 ## Wie es funktioniert
 
-1. **Last beschreiben:** Welche Größen wachsen? Siehe [Load](konzepte/load.md).
+1. **Last beschreiben:** Welche Größen wachsen? Siehe [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md).
 2. **Leistung beobachten:** Was passiert mit [Response Time](#response-time) und Throughput, wenn die Last steigt und die Ressourcen gleich bleiben?
 3. **Ressourcen anpassen:** Um wie viel müssen sie wachsen, damit die Leistung gleich bleibt? Im Idealfall verdoppelt doppelte Hardware die tragbare Last (lineare Skalierbarkeit).
 
@@ -769,7 +769,7 @@ Die Lastfrage des Händlers lautet nicht *Skaliert unser System?*, sondern zum B
 
 ## Verwandt
 
-- [Load](konzepte/load.md)
+- [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md)
 - [Scaling up vs. Scaling out](#scaling-up-vs-scaling-out)
 - Shared-Nothing
 - Sharding
@@ -851,7 +851,7 @@ Die Wege schließen einander nicht aus. Üblich ist: zuerst vertikal, solange es
 
 - Shared-Nothing
 - [Scalability](#scalability)
-- [Load](konzepte/load.md)
+- [Load](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/load.md)
 - [Simplicity](#simplicity)
 
 ## Quelle und Weiterlesen
@@ -1011,7 +1011,7 @@ Zur Evolvability nennt das Buch einen einfachen Prüfstein: Wie viele Entscheidu
 
 - [Simplicity](#simplicity)
 - Schema Evolution
-- [Fault Tolerance](konzepte/fault-tolerance.md)
+- [Fault Tolerance](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fault-tolerance.md)
 - [Wegweiser Kapitel 2](#kap-02)
 
 ## Quelle und Weiterlesen
@@ -1127,7 +1127,7 @@ Die beiden Arbeitsweisen stellen gegensätzliche Anforderungen an Datenmodell, S
 | Abfragen | fest im Programmcode | frei formuliert, explorativ |
 | Datenstand | aktueller Zustand | Verlauf über die Zeit |
 | Datenmenge | Gigabyte bis Terabyte | Terabyte bis Petabyte |
-| Speicherung | zeilenorientiert, Index | [spaltenorientiert](konzepte/column-oriented-storage.md) |
+| Speicherung | zeilenorientiert, Index | [spaltenorientiert](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/column-oriented-storage.md) |
 
 Die Größenangaben sind typische Bereiche, keine festen Grenzen. Zwischen beiden Welten vermittelt ETL in ein Data Warehouse.
 
@@ -1484,7 +1484,7 @@ Besonderheit Sonntag: Im Rohdatensatz gibt es für Sonntage keine Zeile. Erst da
 - [Percentiles](#percentiles)
 - [Response Time](#response-time)
 - DataFrames
-- [Star Schema](konzepte/star-schema.md)
+- [Star Schema](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/star-schema.md)
 
 ## Quelle und Weiterlesen
 
@@ -1564,7 +1564,7 @@ Für die Prognose gibt es je Nacht nur eine Laufzeit; Perzentile sind dort erst 
 - [Response Time](#response-time)
 - SLO und SLA
 - Throughput
-- [Selbsttest Kapitel 1 und 2](konzepte/fragen-kap-01-02.md)
+- [Selbsttest Kapitel 1 und 2](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/konzepte/fragen-kap-01-02.md)
 
 ## Quelle und Weiterlesen
 
@@ -1980,7 +1980,7 @@ K8: 1 richtig, 2 falsch. Erst wenn Laufzeit, Datenmenge, Verfügbarkeits- oder S
 
 # Prompts für deinen Agenten zu T1
 
-Alle Prompts sind für kostenlose Zugänge gedacht und funktionieren mit jedem Chat-Agenten. Gib dem Agenten zuerst die Datei [T1_komplett.md](T1_komplett.md) (hochladen, einfügen oder den Link nennen) und beginne mit dem Rahmenprompt. Platzhalter stehen in geschweiften Klammern. Du findest hier keine Prompts, die ein Ergebnis für dich erzeugen; schreiben, rechnen und entscheiden musst du selbst.
+Alle Prompts sind für kostenlose Zugänge gedacht und funktionieren mit jedem Chat-Agenten. Gib dem Agenten zuerst die Datei [T1_komplett.md](https://github.com/muehlburger/bid-ws2026/blob/main/lernpakete/T1/T1_komplett.md) (Link zum Einfügen: https://raw.githubusercontent.com/muehlburger/bid-ws2026/main/lernpakete/T1/T1_komplett.md; hochladen, einfügen oder den Link nennen) und beginne mit dem Rahmenprompt. Platzhalter stehen in geschweiften Klammern. Du findest hier keine Prompts, die ein Ergebnis für dich erzeugen; schreiben, rechnen und entscheiden musst du selbst.
 
 ## Rahmenprompt
 

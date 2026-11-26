@@ -16,7 +16,7 @@ version: 1
 
 # Prompts für deinen Agenten zu T1
 
-Alle Prompts sind für kostenlose Zugänge gedacht und funktionieren mit jedem Chat-Agenten. Gib dem Agenten zuerst die Datei [T1_komplett.md](T1_komplett.md) (hochladen, einfügen oder den Link nennen) und beginne mit dem Rahmenprompt. Platzhalter stehen in geschweiften Klammern. Du findest hier keine Prompts, die ein Ergebnis für dich erzeugen; schreiben, rechnen und entscheiden musst du selbst.
+Alle Prompts sind für kostenlose Zugänge gedacht und funktionieren mit jedem Chat-Agenten. Gib dem Agenten zuerst die Datei [T1_komplett.md](T1_komplett.md) (Link zum Einfügen: https://raw.githubusercontent.com/muehlburger/bid-ws2026/main/lernpakete/T1/T1_komplett.md; hochladen, einfügen oder den Link nennen) und beginne mit dem Rahmenprompt. Platzhalter stehen in geschweiften Klammern. Du findest hier keine Prompts, die ein Ergebnis für dich erzeugen; schreiben, rechnen und entscheiden musst du selbst.
 
 ## Rahmenprompt
 
