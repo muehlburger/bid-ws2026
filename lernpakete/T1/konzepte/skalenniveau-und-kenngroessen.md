@@ -12,10 +12,10 @@ status: Pflicht
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/skalenniveau-und-kenngroessen.md:6a581567e769]
-stand: 2026-11-25
+stand: 2026-11-26
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/skalenniveau-und-kenngroessen.md), erzeugt am 2026-11-25 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/skalenniveau-und-kenngroessen.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Skalenniveau und Kenngrößen
 

@@ -12,10 +12,10 @@ status: Pflicht
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/big-data-5v.md:039ce49b124c]
-stand: 2026-11-25
+stand: 2026-11-26
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/big-data-5v.md), erzeugt am 2026-11-25 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/big-data-5v.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Big Data und die 5V
 

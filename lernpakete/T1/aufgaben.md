@@ -11,8 +11,8 @@ begriffe: [Entscheidungskette, Big Data und die 5V, Verteilt vs. Single-Node, Ba
 klausurrelevant: true
 sprache: de-AT
 erzeugt: false
-stand: 2026-11-25
-version: 1
+stand: 2026-11-26
+version: 2
 ---
 
 # Aufgaben zu T1
@@ -25,7 +25,7 @@ Der Fall: Ein Modehändler mit 42 Filialen und Onlineshop will zwei Datenprodukt
 
 ### Auftrag
 
-Gruppe zu vier bis fünf, 25 Minuten im Termin; zu Hause allein in etwa 30 Minuten. Material: diese Datei und ein Blatt Papier. Lernziele L10 (Batch oder Stream, ein Rechner oder mehrere, mit Begründung) und L1 (Anforderung als Qualität benennen). Beantworte für jedes Szenario die fünf Fragen in Stichworten und schreibe je Szenario einen Begründungssatz:
+Gruppe zu vier bis fünf, 25 Minuten im Termin; zu Hause allein in etwa 30 Minuten. Material: diese Datei und ein Blatt Papier. Lernziele L10 (Batch oder Stream, ein Rechner oder mehrere, mit Begründung) und L1 (Anforderung als Qualität benennen). S1 und S2 bearbeiten alle (dieselben Kassendaten, zwei Entscheidungen); S3 und S4 sind Transferfälle, wenn Zeit bleibt. Beantworte für jedes Szenario die fünf Fragen in Stichworten und schreibe je Szenario einen Begründungssatz und eine Bedingung, unter der du anders entscheiden würdest. Begründe drei Dinge getrennt: die Aktualität (wie alt dürfen die Daten sein), die Verarbeitungsart (Batch oder Streaming) und die Verteilung (ein Rechner oder mehrere):
 
 1. Welche Anforderungen hat das Szenario (Frist oder Aktualität, Aktualisierungsfrequenz, Verfügbarkeit)?
 2. Welche Big-Data-Eigenschaften (5V) sind relevant, und welche nicht?
@@ -38,13 +38,13 @@ Gruppe zu vier bis fünf, 25 Minuten im Termin; zu Hause allein in etwa 30 Minut
 **Die vier Szenarien**
 
 - **S1** Jede Nacht laufen die Kassenumsätze aller 42 Filialen (rund 20.000 Zeilen pro Tag, Historie seit 2019, etwa 50 Mio. Zeilen) in eine Absatzprognose für die Bestellung der nächsten Woche; das Ergebnis muss um 6 Uhr früh vorliegen.
-- **S2** Der Onlineshop soll in Echtzeit anzeigen, ob ein Artikel in der Filiale Graz „noch 2 Stück“ hat; jede Kassenbuchung muss innerhalb von Sekunden berücksichtigt sein.
+- **S2** Der Onlineshop soll anzeigen, ob ein Artikel in der Filiale Graz „noch 2 Stück“ hat. Zwei Fragen: Wie lange wartet die Kundin auf die Anzeige? Wie lange darf der letzte Verkauf in der Anzeige fehlen? Eine Seite kann schnell laden und trotzdem den Bestand von gestern zeigen.
 - **S3** Für die Prognose sollen zusätzlich Wetterdaten (stündlich, 20 Stationen), Aktionskalender, Feiertage und Kundenrezensionen (Freitext) einfließen.
 - **S4** Eine Excel-Liste mit 84 Filialen, Adresse und Verkaufsfläche wird einmal im Jahr aktualisiert und für einen Bericht ausgewertet.
 
 ### Phase 1 (ohne Agent)
 
-Rund 15 Minuten, Geräte zu. Fülle für jedes Szenario das Raster mit den fünf Fragen aus und schreibe den Begründungssatz handschriftlich. Entscheide zuerst, diskutiere dann; im Termin schreibt eine Person, alle entscheiden.
+Rund 15 Minuten, Geräte zu. Fülle für jedes Szenario das Raster mit den fünf Fragen aus und schreibe den Begründungssatz und die Bedingung handschriftlich; S1 und S2 zuerst. Entscheide zuerst, diskutiere dann; im Termin schreibt eine Person, alle entscheiden.
 
 ### Phase 2 (mit Agent)
 
@@ -123,7 +123,7 @@ Erst lesen, wenn Phase 3 abgeschlossen ist.
 | Szenario | Anforderungen, relevante V | Reicht ein Rechner? | Batch oder Stream | Gerechtfertigte Komplexität |
 |---|---|---|---|---|
 | S1 | Ergebnis bis 6 Uhr (Stunden Spielraum), täglich, Verlässlichkeit des Laufs; Volume moderat (50 Mio. Zeilen Historie, 20.000 je Tag), Datenrate laufend und dieselbe wie in S2, Value hoch | Ja. Eine Datenbank oder eine spaltenorientierte Engine verarbeitet 50 Mio. Zeilen in Sekunden bis Minuten. Excel scheitert, aber Excel ist nicht der Maßstab | Batch, nächtlich | Keine Verteilung. Gerechtfertigt erst, wenn die Laufzeit das Nachtfenster sprengt, die Daten Speicher oder Platte eines Rechners übersteigen, Ausfallsicherheit gefordert ist oder das Zehnfache absehbar ist. Musterantwort: „Batch ja, verteilt nein.“ |
-| S2 | Aktualität in Sekunden, laufende Aktualisierung, Verfügbarkeit rund um die Uhr; Datenrate wie in S1, Datenmenge je Ereignis klein. Anders ist die Anforderung, nicht die Daten | Rechenleistung ja. Aber die Anforderung ist ereignisgetriebene, laufende Verarbeitung; ein nächtlicher Lauf ist strukturell ungeeignet | Stream | Event-Log oder Broker, Zustand je Artikel und Filiale, Umgang mit Reihenfolge, Duplikaten und Ausfällen. Gerechtfertigt durch die Aktualität des Bestands (**Timeliness**), nicht durch Menge, Datenrate oder die Antwortzeit einer Abfrage |
+| S2 | Zwei Anforderungen getrennt: Antwortzeit der Seite (Performance, Sekundenbruchteile) und Aktualität des Bestands (**Timeliness**: der letzte Verkauf darf höchstens Sekunden fehlen); Verfügbarkeit rund um die Uhr. Datenrate wie in S1, Datenmenge je Ereignis klein. Anders ist die Anforderung, nicht die Daten | Rechenleistung ja. Die Frage ist, woher der Bestand kommt; ein nächtlicher Lauf ist für die Aktualität strukturell ungeeignet | Kein Nachtlauf. Zwei begründete Lösungen: ein Ereignisstrom aus den Kassen mit Zustand je Artikel und Filiale, oder die direkte Abfrage des führenden Bestandssystems (System of Record), wenn dessen Last und Verfügbarkeit das zulassen; die zweite ist einfacher und gewinnt, solange nichts dagegen spricht | Event-Log oder Broker (Reihenfolge, Duplikate, Ausfälle) nur, wenn Last oder Verfügbarkeit die direkte Abfrage ausschließen. Gerechtfertigt durch die Aktualität des Bestands, nicht durch Menge, Datenrate oder die Antwortzeit einer Abfrage |
 | S3 | Integration heterogener Quellen (Zeitreihen, Kalender, Freitext) und Qualitätssicherung; weiterhin nächtlich; Variety, Veracity | Ja. Die Komplexität liegt in Datenflüssen, Schemata und Joins, nicht in der Rechenleistung | Batch | Eine Integrations- und Qualitätsschicht (Schema, Joins, Textvorverarbeitung, Prüfregeln); keine Verteilung. Brücke zu T2: Datenqualität ist Teil der Zuverlässigkeit |
 | S4 | Jährlicher Bericht, 84 Zeilen; keine Eigenschaft relevant | Ja, eine Tabellenkalkulation reicht | Batch, trivial | Keine. Die Tabelle kann Stammdaten eines größeren Systems sein, ist aber selbst kein Big-Data-Problem |
 

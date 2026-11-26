@@ -10,8 +10,8 @@ quellen: []
 klausurrelevant: true
 sprache: de-AT
 erzeugt: true
-erzeugt_aus: [README.md:0d849a2bd16e, begriffe.md:af03b5d85e17, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:a7469a9f6bef, konzepte/big-data-5v.md:92907bc9fcdf, konzepte/distributed-vs-single-node.md:0a7f37487509, konzepte/kap-02.md:9fd405b057d4, konzepte/fault-vs-failure.md:15ec22346c40, konzepte/batch-vs-stream.md:2f028d737016, konzepte/timeliness.md:e1f60dd4297b, konzepte/scalability.md:01ce698d8e0a, konzepte/scaling-up-vs-scaling-out.md:30dbf5cf8a34, konzepte/response-time.md:3b8247ca7a53, konzepte/maintainability.md:a951392a4cb3, konzepte/simplicity.md:4fa2597771fa, konzepte/operational-vs-analytical-systems.md:00ca96b08192, konzepte/crisp-dm.md:68b5202bb65c, konzepte/system-of-record.md:0b2844d29288, konzepte/derived-data.md:31a255f701e7, konzepte/skalenniveau-und-kenngroessen.md:b856549a0c09, konzepte/percentiles.md:a566c7936ef1, aufgaben.md:39c3cd7a7c83, uebung-notebook.md:30554b81b1a1, so-fragt-die-klausur.md:8790181296a9, prompts.md:e87be97311a9]
-stand: 2026-11-25
+erzeugt_aus: [README.md:84505ba7af5d, begriffe.md:7f067ce3ced8, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:31e0b7928e57, konzepte/big-data-5v.md:68d5fa99749f, konzepte/distributed-vs-single-node.md:7e7fcde50e94, konzepte/kap-02.md:4920a7f1cb94, konzepte/fault-vs-failure.md:df9dbd04b889, konzepte/batch-vs-stream.md:ec73ca1ce481, konzepte/timeliness.md:fc858851d931, konzepte/scalability.md:f83386234fca, konzepte/scaling-up-vs-scaling-out.md:048b74476a25, konzepte/response-time.md:eb393a0a17d5, konzepte/maintainability.md:36316b580247, konzepte/simplicity.md:812aff8023a1, konzepte/operational-vs-analytical-systems.md:f8243ae05407, konzepte/crisp-dm.md:eb9a9d95aea6, konzepte/system-of-record.md:4dab83b81495, konzepte/derived-data.md:6bdd70fbe5b0, konzepte/skalenniveau-und-kenngroessen.md:b528270ac76c, konzepte/percentiles.md:cd20ed0eca37, aufgaben.md:7cd44f257c04, uebung-notebook.md:0e377b2c4afe, so-fragt-die-klausur.md:8790181296a9, prompts.md:e87be97311a9]
+stand: 2026-11-26
 version: 1
 ---
 # Lernpaket T1 in einer Datei
@@ -39,9 +39,9 @@ Termin 1 der Lehrveranstaltung Big Data (BID), Samstag, 28.11.2026, 10:30 bis 14
 
 | Uhrzeit | Block | Inhalt | Lernziel | Agent |
 |---|---|---|---|---|
-| 10:30 | Start | Vorstellung, Arbeitsweise, Regeln, Gruppen bilden | – | – |
+| 10:30 | Start | Einstiegsfrage am Fall (Vorschlag um 6 Uhr, „noch 2 Stück in Graz“: wie alt dürfen die Daten sein?), Vorstellung, Arbeitsweise, Regeln, Gruppen bilden | – | – |
 | 10:50 | Input 1 | Wann wird aus einem Datenproblem ein Architekturproblem? 5V, vier Qualitäten, Entscheidungskette, Batch oder Streaming | L1 | – |
-| 11:07 | Aufgabe 1 | Vier Szenarien, fünf Leitfragen, ein Begründungssatz je Szenario (Gruppe) | L10 | ohne |
+| 11:07 | Aufgabe 1 | Vier Szenarien (S1 und S2 für alle, S3 und S4 Transfer), fünf Leitfragen, je Szenario ein Begründungssatz und eine Bedingung (Gruppe) | L10 | ohne |
 | 11:32 | Musterlösung 1 | Auflösung entlang der Kette; Items K1 und K7 | L10 | – |
 | 11:42 | Input 2 | CRISP-DM und das Case Canvas | L5 | – |
 | 12:00 | Pause | Gruppenwahl in Moodle | – | – |
@@ -50,8 +50,8 @@ Termin 1 der Lehrveranstaltung Big Data (BID), Samstag, 28.11.2026, 10:30 bis 14
 | 13:10 | Musterlösung 2 | Musterbeispiel, häufige Fragen; Item K3 | L5 | – |
 | 13:20 | Input 3 | Skalenniveau, Diagramm, Kenngröße; der Datensatz | L8 | – |
 | 13:35 | Aufgabe 3 | Notebook NB1 Teil A, drei Fragen an den Datensatz (Paar) | L8 | ohne |
-| 14:00 | Musterlösung 3 | Median gegen Mittelwert, der Sonntag ohne Zeile; Items K5 und K6 | L8 | – |
-| 14:10 | Abschluss | Quiz Q1, Gruppenwahl, Ausblick auf T2 | – | – |
+| 14:00 | Musterlösung 3 | Der Sonntag fehlt im Profil, Median gegen Mittelwert; Items K5 und K6 | L8 | – |
+| 14:08 | Abschluss | Drei Sätze zur Einstiegsfrage, Quiz Q1, Gruppenwahl, Ausblick auf T2 | – | – |
 
 Im Termin laufen alle drei Aufgaben ohne Agent, weil du zuerst die Arbeitsweise kennenlernst. Zu Hause gelten die drei Phasen aus [aufgaben.md](#aufgaben): ohne Agent, mit Agent, ohne Agent.
 
@@ -1585,7 +1585,7 @@ Der Fall: Ein Modehändler mit 42 Filialen und Onlineshop will zwei Datenprodukt
 
 ### Auftrag
 
-Gruppe zu vier bis fünf, 25 Minuten im Termin; zu Hause allein in etwa 30 Minuten. Material: diese Datei und ein Blatt Papier. Lernziele L10 (Batch oder Stream, ein Rechner oder mehrere, mit Begründung) und L1 (Anforderung als Qualität benennen). Beantworte für jedes Szenario die fünf Fragen in Stichworten und schreibe je Szenario einen Begründungssatz:
+Gruppe zu vier bis fünf, 25 Minuten im Termin; zu Hause allein in etwa 30 Minuten. Material: diese Datei und ein Blatt Papier. Lernziele L10 (Batch oder Stream, ein Rechner oder mehrere, mit Begründung) und L1 (Anforderung als Qualität benennen). S1 und S2 bearbeiten alle (dieselben Kassendaten, zwei Entscheidungen); S3 und S4 sind Transferfälle, wenn Zeit bleibt. Beantworte für jedes Szenario die fünf Fragen in Stichworten und schreibe je Szenario einen Begründungssatz und eine Bedingung, unter der du anders entscheiden würdest. Begründe drei Dinge getrennt: die Aktualität (wie alt dürfen die Daten sein), die Verarbeitungsart (Batch oder Streaming) und die Verteilung (ein Rechner oder mehrere):
 
 1. Welche Anforderungen hat das Szenario (Frist oder Aktualität, Aktualisierungsfrequenz, Verfügbarkeit)?
 2. Welche Big-Data-Eigenschaften (5V) sind relevant, und welche nicht?
@@ -1598,13 +1598,13 @@ Gruppe zu vier bis fünf, 25 Minuten im Termin; zu Hause allein in etwa 30 Minut
 **Die vier Szenarien**
 
 - **S1** Jede Nacht laufen die Kassenumsätze aller 42 Filialen (rund 20.000 Zeilen pro Tag, Historie seit 2019, etwa 50 Mio. Zeilen) in eine Absatzprognose für die Bestellung der nächsten Woche; das Ergebnis muss um 6 Uhr früh vorliegen.
-- **S2** Der Onlineshop soll in Echtzeit anzeigen, ob ein Artikel in der Filiale Graz „noch 2 Stück“ hat; jede Kassenbuchung muss innerhalb von Sekunden berücksichtigt sein.
+- **S2** Der Onlineshop soll anzeigen, ob ein Artikel in der Filiale Graz „noch 2 Stück“ hat. Zwei Fragen: Wie lange wartet die Kundin auf die Anzeige? Wie lange darf der letzte Verkauf in der Anzeige fehlen? Eine Seite kann schnell laden und trotzdem den Bestand von gestern zeigen.
 - **S3** Für die Prognose sollen zusätzlich Wetterdaten (stündlich, 20 Stationen), Aktionskalender, Feiertage und Kundenrezensionen (Freitext) einfließen.
 - **S4** Eine Excel-Liste mit 84 Filialen, Adresse und Verkaufsfläche wird einmal im Jahr aktualisiert und für einen Bericht ausgewertet.
 
 ### Phase 1 (ohne Agent)
 
-Rund 15 Minuten, Geräte zu. Fülle für jedes Szenario das Raster mit den fünf Fragen aus und schreibe den Begründungssatz handschriftlich. Entscheide zuerst, diskutiere dann; im Termin schreibt eine Person, alle entscheiden.
+Rund 15 Minuten, Geräte zu. Fülle für jedes Szenario das Raster mit den fünf Fragen aus und schreibe den Begründungssatz und die Bedingung handschriftlich; S1 und S2 zuerst. Entscheide zuerst, diskutiere dann; im Termin schreibt eine Person, alle entscheiden.
 
 ### Phase 2 (mit Agent)
 
@@ -1683,7 +1683,7 @@ Erst lesen, wenn Phase 3 abgeschlossen ist.
 | Szenario | Anforderungen, relevante V | Reicht ein Rechner? | Batch oder Stream | Gerechtfertigte Komplexität |
 |---|---|---|---|---|
 | S1 | Ergebnis bis 6 Uhr (Stunden Spielraum), täglich, Verlässlichkeit des Laufs; Volume moderat (50 Mio. Zeilen Historie, 20.000 je Tag), Datenrate laufend und dieselbe wie in S2, Value hoch | Ja. Eine Datenbank oder eine spaltenorientierte Engine verarbeitet 50 Mio. Zeilen in Sekunden bis Minuten. Excel scheitert, aber Excel ist nicht der Maßstab | Batch, nächtlich | Keine Verteilung. Gerechtfertigt erst, wenn die Laufzeit das Nachtfenster sprengt, die Daten Speicher oder Platte eines Rechners übersteigen, Ausfallsicherheit gefordert ist oder das Zehnfache absehbar ist. Musterantwort: „Batch ja, verteilt nein.“ |
-| S2 | Aktualität in Sekunden, laufende Aktualisierung, Verfügbarkeit rund um die Uhr; Datenrate wie in S1, Datenmenge je Ereignis klein. Anders ist die Anforderung, nicht die Daten | Rechenleistung ja. Aber die Anforderung ist ereignisgetriebene, laufende Verarbeitung; ein nächtlicher Lauf ist strukturell ungeeignet | Stream | Event-Log oder Broker, Zustand je Artikel und Filiale, Umgang mit Reihenfolge, Duplikaten und Ausfällen. Gerechtfertigt durch die Aktualität des Bestands (**Timeliness**), nicht durch Menge, Datenrate oder die Antwortzeit einer Abfrage |
+| S2 | Zwei Anforderungen getrennt: Antwortzeit der Seite (Performance, Sekundenbruchteile) und Aktualität des Bestands (**Timeliness**: der letzte Verkauf darf höchstens Sekunden fehlen); Verfügbarkeit rund um die Uhr. Datenrate wie in S1, Datenmenge je Ereignis klein. Anders ist die Anforderung, nicht die Daten | Rechenleistung ja. Die Frage ist, woher der Bestand kommt; ein nächtlicher Lauf ist für die Aktualität strukturell ungeeignet | Kein Nachtlauf. Zwei begründete Lösungen: ein Ereignisstrom aus den Kassen mit Zustand je Artikel und Filiale, oder die direkte Abfrage des führenden Bestandssystems (System of Record), wenn dessen Last und Verfügbarkeit das zulassen; die zweite ist einfacher und gewinnt, solange nichts dagegen spricht | Event-Log oder Broker (Reihenfolge, Duplikate, Ausfälle) nur, wenn Last oder Verfügbarkeit die direkte Abfrage ausschließen. Gerechtfertigt durch die Aktualität des Bestands, nicht durch Menge, Datenrate oder die Antwortzeit einer Abfrage |
 | S3 | Integration heterogener Quellen (Zeitreihen, Kalender, Freitext) und Qualitätssicherung; weiterhin nächtlich; Variety, Veracity | Ja. Die Komplexität liegt in Datenflüssen, Schemata und Joins, nicht in der Rechenleistung | Batch | Eine Integrations- und Qualitätsschicht (Schema, Joins, Textvorverarbeitung, Prüfregeln); keine Verteilung. Brücke zu T2: Datenqualität ist Teil der Zuverlässigkeit |
 | S4 | Jährlicher Bericht, 84 Zeilen; keine Eigenschaft relevant | Ja, eine Tabellenkalkulation reicht | Batch, trivial | Keine. Die Tabelle kann Stammdaten eines größeren Systems sein, ist aber selbst kein Big-Data-Problem |
 
@@ -1786,7 +1786,7 @@ print(profile)                                     # Welcher Tag fehlt hier? War
 profile_all = ___
 ```
 
-Erwartete Ausgabe der Gruppierung (Stück): Montag 76.742, Dienstag 85.190, Mittwoch 92.084, Donnerstag 83.282, Freitag 102.635, Samstag 125.881; der Sonntag (6) fehlt. Nach `reindex` erscheint er als 0 im Säulendiagramm. Beantworte: stärkster Tag, zweitstärkster, null am Sonntag, weil …, und was das für eine Prognose bedeutet. Überlege, woher du weißt, dass 0 die richtige Füllung ist.
+Erwartete Ausgabe der Gruppierung (Stück): Montag 76.742, Dienstag 85.190, Mittwoch 92.084, Donnerstag 83.282, Freitag 102.635, Samstag 125.881; der Sonntag (6) fehlt. `reindex(range(7))` allein trägt für den Sonntag NaN ein; erst `fill_value=0` setzt die 0, und das ist eine fachliche Entscheidung, keine Rechenregel. Beantworte: stärkster Tag, zweitstärkster, Sonntag fehlt, weil …, und was das für eine Prognose bedeutet. Überlege, woher du weißt, dass 0 die richtige Füllung ist, und ob das auch für den Onlineshop (Filiale 1) gilt.
 
 **Zusatz für schnelle Paare: Preisverteilung.** Die Zelle läuft ohne Änderung:
 
@@ -1844,7 +1844,7 @@ Dazu die Wiedergabe mit neuen Zahlen: Tagesmengen 2, 1, 1, 6, 1, 2, 1. Bestimme 
 2. **Komplexität:** Code statt Klicks, eine Laufzeitumgebung (Colab, Konto), Datentypen, die nicht das Skalenniveau sind, und die Versuchung, einen fehlenden Tag unbesehen mit 0 zu füllen.
 3. **Nicht einsetzen:** Für 84 Zeilen Stammdaten einmal im Jahr reicht die Tabellenkalkulation; für Sekundenaktualität im Shop ist ein Notebook das falsche Werkzeug, dort braucht es einen laufenden Dienst.
 
-**Befunde:** F1: Filialnummer nominal (Zahl als Name), Verkaufspreis metrisch, Aktionskennzeichen nominal, Datum metrisch (Differenzen sinnvoll). Diagramme: (a) Säulendiagramm je Wochentag, (b) Histogramm oder Boxplot, (c) Balken- oder Kreisdiagramm mit zwei Kategorien. F2: Median 1, Mittelwert 1,57; rechtsschief, zwei Drittel der Tage ein Stück, wenige Aktionstage bis 19 Stück. Der Median beschreibt den typischen Tag; der Mittelwert berücksichtigt das Gesamtvolumen und zählt für aggregierte Mengen, taugt aber nicht als Planungszahl. F3: Samstag stärkster Tag, Freitag zweitstärkster, Montag schwächster Werktag. Für Sonntage gibt es im Rohdatensatz keine Zeile; erst das Domänenwissen „Filialen geschlossen“ erlaubt, sie im vollständigen Kalender als strukturelle 0 zu kodieren. Das ist kein fehlender Wert und wird weder bereinigt noch durch Nachbarwerte ersetzt; ein Kassenausfall am Dienstag sieht gleich aus und ist ein fehlender Wert. Ob die 0 in die Zielreihe eingeht, hängt davon ab, ob je Kalendertag (dann 0 und Wochentag als Pflichtmerkmal) oder je Öffnungstag (dann Sonntage ausschließen wie Feiertage) prognostiziert wird. Zusatz: rechtsschief mit Häufungen an psychologischen Preisen; der Median beschreibt den typischen Preis besser. Wiedergabe: sortiert 1, 1, 1, 1, 2, 2, 6, Median 1, Mittelwert 14 durch 7 gleich 2; der Median.
+**Befunde:** F1: Filialnummer nominal (Zahl als Name), Verkaufspreis metrisch, Aktionskennzeichen nominal, Datum metrisch (Differenzen sinnvoll). Diagramme: (a) Säulendiagramm je Wochentag, (b) Histogramm oder Boxplot, (c) Balken- oder Kreisdiagramm mit zwei Kategorien. F2 (über beobachtete Verkaufstage je Variante und Filiale, nur Verkäufe mit Menge größer 0): Median 1, Mittelwert 1,57; rechtsschief, zwei Drittel der Verkaufstage ein Stück, wenige Aktionstage bis 19 Stück. Der Median beschreibt den typischen Tag; der Mittelwert berücksichtigt das Gesamtvolumen und zählt für aggregierte Mengen, taugt aber nicht als Planungszahl. F3: Samstag stärkster Tag, Freitag zweitstärkster, Montag schwächster Werktag. Für Sonntage gibt es im Rohdatensatz keine Zeile; erst das Domänenwissen „Filialen geschlossen“ erlaubt, sie im vollständigen Kalender als strukturelle 0 zu kodieren. Das ist kein fehlender Wert und wird weder bereinigt noch durch Nachbarwerte ersetzt; ein Kassenausfall am Dienstag sieht gleich aus und ist ein fehlender Wert. Für den Onlineshop (Filiale 1) fehlt der Sonntag ebenfalls; „geschlossen“ erklärt das nicht, dort muss die Buchungslogik des Exports es bestätigen. Ob die 0 in die Zielreihe eingeht, hängt davon ab, ob je Kalendertag (dann 0; ob der Wochentag die Prognose gegenüber einer einfachen Baseline verbessert, wird geprüft, nicht behauptet) oder je Öffnungstag (dann Sonntage ausschließen wie Feiertage) prognostiziert wird. Zusatz: rechtsschief mit Häufungen an psychologischen Preisen; der Median beschreibt den typischen Preis besser. Wiedergabe: sortiert 1, 1, 1, 1, 2, 2, 6, Median 1, Mittelwert 14 durch 7 gleich 2; der Median.
 
 ## Optional: lokal installieren
 

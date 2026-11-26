@@ -10,8 +10,8 @@ quellen: ["DDIA 2e, Kap. 3 „DataFrames, Matrices, and Arrays“ S. 105", "DDIA
 klausurrelevant: true
 sprache: de-AT
 erzeugt: false
-stand: 2026-11-25
-version: 1
+stand: 2026-11-26
+version: 2
 ---
 
 # Übung zu T1: Datenexploration mit dem Notebook NB1 Teil A
@@ -87,7 +87,7 @@ print(profile)                                     # Welcher Tag fehlt hier? War
 profile_all = ___
 ```
 
-Erwartete Ausgabe der Gruppierung (Stück): Montag 76.742, Dienstag 85.190, Mittwoch 92.084, Donnerstag 83.282, Freitag 102.635, Samstag 125.881; der Sonntag (6) fehlt. Nach `reindex` erscheint er als 0 im Säulendiagramm. Beantworte: stärkster Tag, zweitstärkster, null am Sonntag, weil …, und was das für eine Prognose bedeutet. Überlege, woher du weißt, dass 0 die richtige Füllung ist.
+Erwartete Ausgabe der Gruppierung (Stück): Montag 76.742, Dienstag 85.190, Mittwoch 92.084, Donnerstag 83.282, Freitag 102.635, Samstag 125.881; der Sonntag (6) fehlt. `reindex(range(7))` allein trägt für den Sonntag NaN ein; erst `fill_value=0` setzt die 0, und das ist eine fachliche Entscheidung, keine Rechenregel. Beantworte: stärkster Tag, zweitstärkster, Sonntag fehlt, weil …, und was das für eine Prognose bedeutet. Überlege, woher du weißt, dass 0 die richtige Füllung ist, und ob das auch für den Onlineshop (Filiale 1) gilt.
 
 **Zusatz für schnelle Paare: Preisverteilung.** Die Zelle läuft ohne Änderung:
 
@@ -145,7 +145,7 @@ Dazu die Wiedergabe mit neuen Zahlen: Tagesmengen 2, 1, 1, 6, 1, 2, 1. Bestimme 
 2. **Komplexität:** Code statt Klicks, eine Laufzeitumgebung (Colab, Konto), Datentypen, die nicht das Skalenniveau sind, und die Versuchung, einen fehlenden Tag unbesehen mit 0 zu füllen.
 3. **Nicht einsetzen:** Für 84 Zeilen Stammdaten einmal im Jahr reicht die Tabellenkalkulation; für Sekundenaktualität im Shop ist ein Notebook das falsche Werkzeug, dort braucht es einen laufenden Dienst.
 
-**Befunde:** F1: Filialnummer nominal (Zahl als Name), Verkaufspreis metrisch, Aktionskennzeichen nominal, Datum metrisch (Differenzen sinnvoll). Diagramme: (a) Säulendiagramm je Wochentag, (b) Histogramm oder Boxplot, (c) Balken- oder Kreisdiagramm mit zwei Kategorien. F2: Median 1, Mittelwert 1,57; rechtsschief, zwei Drittel der Tage ein Stück, wenige Aktionstage bis 19 Stück. Der Median beschreibt den typischen Tag; der Mittelwert berücksichtigt das Gesamtvolumen und zählt für aggregierte Mengen, taugt aber nicht als Planungszahl. F3: Samstag stärkster Tag, Freitag zweitstärkster, Montag schwächster Werktag. Für Sonntage gibt es im Rohdatensatz keine Zeile; erst das Domänenwissen „Filialen geschlossen“ erlaubt, sie im vollständigen Kalender als strukturelle 0 zu kodieren. Das ist kein fehlender Wert und wird weder bereinigt noch durch Nachbarwerte ersetzt; ein Kassenausfall am Dienstag sieht gleich aus und ist ein fehlender Wert. Ob die 0 in die Zielreihe eingeht, hängt davon ab, ob je Kalendertag (dann 0 und Wochentag als Pflichtmerkmal) oder je Öffnungstag (dann Sonntage ausschließen wie Feiertage) prognostiziert wird. Zusatz: rechtsschief mit Häufungen an psychologischen Preisen; der Median beschreibt den typischen Preis besser. Wiedergabe: sortiert 1, 1, 1, 1, 2, 2, 6, Median 1, Mittelwert 14 durch 7 gleich 2; der Median.
+**Befunde:** F1: Filialnummer nominal (Zahl als Name), Verkaufspreis metrisch, Aktionskennzeichen nominal, Datum metrisch (Differenzen sinnvoll). Diagramme: (a) Säulendiagramm je Wochentag, (b) Histogramm oder Boxplot, (c) Balken- oder Kreisdiagramm mit zwei Kategorien. F2 (über beobachtete Verkaufstage je Variante und Filiale, nur Verkäufe mit Menge größer 0): Median 1, Mittelwert 1,57; rechtsschief, zwei Drittel der Verkaufstage ein Stück, wenige Aktionstage bis 19 Stück. Der Median beschreibt den typischen Tag; der Mittelwert berücksichtigt das Gesamtvolumen und zählt für aggregierte Mengen, taugt aber nicht als Planungszahl. F3: Samstag stärkster Tag, Freitag zweitstärkster, Montag schwächster Werktag. Für Sonntage gibt es im Rohdatensatz keine Zeile; erst das Domänenwissen „Filialen geschlossen“ erlaubt, sie im vollständigen Kalender als strukturelle 0 zu kodieren. Das ist kein fehlender Wert und wird weder bereinigt noch durch Nachbarwerte ersetzt; ein Kassenausfall am Dienstag sieht gleich aus und ist ein fehlender Wert. Für den Onlineshop (Filiale 1) fehlt der Sonntag ebenfalls; „geschlossen“ erklärt das nicht, dort muss die Buchungslogik des Exports es bestätigen. Ob die 0 in die Zielreihe eingeht, hängt davon ab, ob je Kalendertag (dann 0; ob der Wochentag die Prognose gegenüber einer einfachen Baseline verbessert, wird geprüft, nicht behauptet) oder je Öffnungstag (dann Sonntage ausschließen wie Feiertage) prognostiziert wird. Zusatz: rechtsschief mit Häufungen an psychologischen Preisen; der Median beschreibt den typischen Preis besser. Wiedergabe: sortiert 1, 1, 1, 1, 2, 2, 6, Median 1, Mittelwert 14 durch 7 gleich 2; der Median.
 
 ## Optional: lokal installieren
 

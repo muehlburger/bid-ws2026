@@ -12,10 +12,10 @@ status: Kern
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/simplicity.md:e5511ab6fa82]
-stand: 2026-11-25
+stand: 2026-11-26
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/simplicity.md), erzeugt am 2026-11-25 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/simplicity.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Simplicity
 

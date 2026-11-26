@@ -10,8 +10,8 @@ quellen: ["DDIA 2e, Kap. 1 „Distributed Versus Single-Node Systems“ S. 19", 
 klausurrelevant: true
 sprache: de-AT
 erzeugt: false
-stand: 2026-11-25
-version: 1
+stand: 2026-11-26
+version: 2
 ---
 
 # Lernpaket T1: Big Data als Architekturfrage, CRISP-DM, Datenexploration
@@ -31,9 +31,9 @@ Termin 1 der Lehrveranstaltung Big Data (BID), Samstag, 28.11.2026, 10:30 bis 14
 
 | Uhrzeit | Block | Inhalt | Lernziel | Agent |
 |---|---|---|---|---|
-| 10:30 | Start | Vorstellung, Arbeitsweise, Regeln, Gruppen bilden | – | – |
+| 10:30 | Start | Einstiegsfrage am Fall (Vorschlag um 6 Uhr, „noch 2 Stück in Graz“: wie alt dürfen die Daten sein?), Vorstellung, Arbeitsweise, Regeln, Gruppen bilden | – | – |
 | 10:50 | Input 1 | Wann wird aus einem Datenproblem ein Architekturproblem? 5V, vier Qualitäten, Entscheidungskette, Batch oder Streaming | L1 | – |
-| 11:07 | Aufgabe 1 | Vier Szenarien, fünf Leitfragen, ein Begründungssatz je Szenario (Gruppe) | L10 | ohne |
+| 11:07 | Aufgabe 1 | Vier Szenarien (S1 und S2 für alle, S3 und S4 Transfer), fünf Leitfragen, je Szenario ein Begründungssatz und eine Bedingung (Gruppe) | L10 | ohne |
 | 11:32 | Musterlösung 1 | Auflösung entlang der Kette; Items K1 und K7 | L10 | – |
 | 11:42 | Input 2 | CRISP-DM und das Case Canvas | L5 | – |
 | 12:00 | Pause | Gruppenwahl in Moodle | – | – |
@@ -42,8 +42,8 @@ Termin 1 der Lehrveranstaltung Big Data (BID), Samstag, 28.11.2026, 10:30 bis 14
 | 13:10 | Musterlösung 2 | Musterbeispiel, häufige Fragen; Item K3 | L5 | – |
 | 13:20 | Input 3 | Skalenniveau, Diagramm, Kenngröße; der Datensatz | L8 | – |
 | 13:35 | Aufgabe 3 | Notebook NB1 Teil A, drei Fragen an den Datensatz (Paar) | L8 | ohne |
-| 14:00 | Musterlösung 3 | Median gegen Mittelwert, der Sonntag ohne Zeile; Items K5 und K6 | L8 | – |
-| 14:10 | Abschluss | Quiz Q1, Gruppenwahl, Ausblick auf T2 | – | – |
+| 14:00 | Musterlösung 3 | Der Sonntag fehlt im Profil, Median gegen Mittelwert; Items K5 und K6 | L8 | – |
+| 14:08 | Abschluss | Drei Sätze zur Einstiegsfrage, Quiz Q1, Gruppenwahl, Ausblick auf T2 | – | – |
 
 Im Termin laufen alle drei Aufgaben ohne Agent, weil du zuerst die Arbeitsweise kennenlernst. Zu Hause gelten die drei Phasen aus [aufgaben.md](aufgaben.md): ohne Agent, mit Agent, ohne Agent.
 

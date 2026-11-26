@@ -12,10 +12,10 @@ status: Ausblick
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/column-oriented-storage.md:e9937e32c2a9]
-stand: 2026-11-25
+stand: 2026-11-26
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/column-oriented-storage.md), erzeugt am 2026-11-25 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/column-oriented-storage.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Column-Oriented Storage
 

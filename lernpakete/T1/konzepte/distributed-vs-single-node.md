@@ -12,10 +12,10 @@ status: Pflicht
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/vergleiche/distributed-vs-single-node.md:1bc5b60e30c4]
-stand: 2026-11-25
+stand: 2026-11-26
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (vergleiche/distributed-vs-single-node.md), erzeugt am 2026-11-25 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (vergleiche/distributed-vs-single-node.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Verteilt vs. Single-Node
 
