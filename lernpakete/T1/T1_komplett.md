@@ -10,7 +10,7 @@ quellen: []
 klausurrelevant: true
 sprache: de-AT
 erzeugt: true
-erzeugt_aus: [README.md:84505ba7af5d, begriffe.md:0dc0f61e331d, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:e790ccbcf4c9, konzepte/big-data-5v.md:623805e0ce1d, konzepte/distributed-vs-single-node.md:fbfaa3586b67, konzepte/kap-02.md:048fda0e6ac9, konzepte/fault-vs-failure.md:d3986e698565, konzepte/batch-vs-stream.md:b369d96514c9, konzepte/timeliness.md:87b829edc18e, konzepte/scalability.md:6c2649674631, konzepte/scaling-up-vs-scaling-out.md:86b3c54a6b78, konzepte/response-time.md:b002fd4dd734, konzepte/maintainability.md:6409b0470fb5, konzepte/simplicity.md:cb97c1c74e69, konzepte/operational-vs-analytical-systems.md:cb46e2f0659b, konzepte/crisp-dm.md:cb96496dd6a2, konzepte/system-of-record.md:c7c2af8bc15d, konzepte/derived-data.md:954fed77a4e9, konzepte/skalenniveau-und-kenngroessen.md:e2bec2a23f93, konzepte/percentiles.md:c58fd8d780dc, aufgaben.md:e3b8c3b52338, uebung-notebook.md:0e377b2c4afe, so-fragt-die-klausur.md:8790181296a9, prompts.md:e87be97311a9]
+erzeugt_aus: [README.md:84505ba7af5d, begriffe.md:0dc0f61e331d, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:e790ccbcf4c9, konzepte/big-data-5v.md:623805e0ce1d, konzepte/distributed-vs-single-node.md:fbfaa3586b67, konzepte/kap-02.md:048fda0e6ac9, konzepte/fault-vs-failure.md:d3986e698565, konzepte/batch-vs-stream.md:b369d96514c9, konzepte/timeliness.md:87b829edc18e, konzepte/scalability.md:6c2649674631, konzepte/scaling-up-vs-scaling-out.md:86b3c54a6b78, konzepte/response-time.md:b002fd4dd734, konzepte/maintainability.md:6409b0470fb5, konzepte/simplicity.md:cb97c1c74e69, konzepte/operational-vs-analytical-systems.md:cb46e2f0659b, konzepte/crisp-dm.md:cb96496dd6a2, konzepte/system-of-record.md:c7c2af8bc15d, konzepte/derived-data.md:954fed77a4e9, konzepte/skalenniveau-und-kenngroessen.md:e2bec2a23f93, konzepte/percentiles.md:c58fd8d780dc, aufgaben.md:e3b8c3b52338, uebung-notebook.md:0e377b2c4afe, so-fragt-die-klausur.md:f506a26daea4, prompts.md:e87be97311a9]
 stand: 2026-11-27
 version: 1
 ---
@@ -1925,6 +1925,8 @@ So ändert die Klausur diese Frage: ein nominales Merkmal mit zwei Kategorien (A
 
 ### K6 Median und Mittelwert
 
+Im Termin wurde eine andere Reihe gezeigt (1, 2, 2, 2, 3, 4, 14: Median 2, Mittelwert 4); hier die Pool-Fassung.
+
 Typ: einfache Rechenaufgabe (numerisch)
 Lernziel: L8
 
@@ -1933,6 +1935,8 @@ Tagesmengen eines Artikels: 1, 1, 2, 1, 5, 1, 3. Gib Median und Mittelwert an. W
 So ändert die Klausur diese Frage: andere sieben Zahlen, oder du deutest Median 1 und Mittelwert 1,6 aus dem Datensatz (Schiefe erkennen, Kenngröße begründen).
 
 ### K7 Szenario nächtliche Prognose
+
+Im Termin lief die Transfer-Variante: Der Nachtlauf endet nach dem Datenwachstum um 6:40 Uhr statt um 6 Uhr; gefragt war, welche Messung vor der nächsten Architekturentscheidung zu fordern ist (Lösung: die Laufzeit je Schritt auf der heutigen Maschine, um den Engpass zu finden). Hier das Original aus dem Pool.
 
 Typ: Szenario (Auswahl)
 Lernziel: L10

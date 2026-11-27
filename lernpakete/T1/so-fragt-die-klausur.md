@@ -11,8 +11,8 @@ begriffe: [Big Data und die 5V, Entscheidungskette, CRISP-DM, Skalenniveau und K
 klausurrelevant: true
 sprache: de-AT
 erzeugt: false
-stand: 2026-11-25
-version: 1
+stand: 2026-11-27
+version: 2
 ---
 
 # So fragt die Klausur zu T1
@@ -76,6 +76,8 @@ So ändert die Klausur diese Frage: ein nominales Merkmal mit zwei Kategorien (A
 
 ### K6 Median und Mittelwert
 
+Im Termin wurde eine andere Reihe gezeigt (1, 2, 2, 2, 3, 4, 14: Median 2, Mittelwert 4); hier die Pool-Fassung.
+
 Typ: einfache Rechenaufgabe (numerisch)
 Lernziel: L8
 
@@ -84,6 +86,8 @@ Tagesmengen eines Artikels: 1, 1, 2, 1, 5, 1, 3. Gib Median und Mittelwert an. W
 So ändert die Klausur diese Frage: andere sieben Zahlen, oder du deutest Median 1 und Mittelwert 1,6 aus dem Datensatz (Schiefe erkennen, Kenngröße begründen).
 
 ### K7 Szenario nächtliche Prognose
+
+Im Termin lief die Transfer-Variante: Der Nachtlauf endet nach dem Datenwachstum um 6:40 Uhr statt um 6 Uhr; gefragt war, welche Messung vor der nächsten Architekturentscheidung zu fordern ist (Lösung: die Laufzeit je Schritt auf der heutigen Maschine, um den Engpass zu finden). Hier das Original aus dem Pool.
 
 Typ: Szenario (Auswahl)
 Lernziel: L10
