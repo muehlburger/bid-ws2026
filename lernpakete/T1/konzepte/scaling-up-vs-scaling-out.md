@@ -12,10 +12,10 @@ status: Kern
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/vergleiche/scaling-up-vs-scaling-out.md:6dc908caf506]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (vergleiche/scaling-up-vs-scaling-out.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (vergleiche/scaling-up-vs-scaling-out.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Scaling up vs. Scaling out
 

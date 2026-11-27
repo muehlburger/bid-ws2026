@@ -12,10 +12,10 @@ status: Ausblick
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/star-schema.md:4e2ed53caa9c]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/star-schema.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/star-schema.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Star Schema
 

@@ -12,10 +12,10 @@ status: Ausblick
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/load.md:0c71477ed3c4]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/load.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/load.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Load
 

@@ -10,8 +10,8 @@ quellen: []
 klausurrelevant: true
 sprache: de-AT
 erzeugt: true
-erzeugt_aus: [konzepte/entscheidungskette.md:31e0b7928e57, konzepte/big-data-5v.md:68d5fa99749f, konzepte/distributed-vs-single-node.md:7e7fcde50e94, konzepte/kap-02.md:4920a7f1cb94, konzepte/fault-vs-failure.md:df9dbd04b889, konzepte/batch-vs-stream.md:ec73ca1ce481, konzepte/timeliness.md:fc858851d931, konzepte/scalability.md:f83386234fca, konzepte/scaling-up-vs-scaling-out.md:048b74476a25, konzepte/response-time.md:eb393a0a17d5, konzepte/maintainability.md:36316b580247, konzepte/simplicity.md:812aff8023a1, konzepte/operational-vs-analytical-systems.md:f8243ae05407, konzepte/load.md:c2d22e39dd1e, konzepte/fault-tolerance.md:ccd6647b250b, konzepte/column-oriented-storage.md:2c9903cc53f3, konzepte/crisp-dm.md:eb9a9d95aea6, konzepte/system-of-record.md:4dab83b81495, konzepte/derived-data.md:6bdd70fbe5b0, konzepte/skalenniveau-und-kenngroessen.md:b528270ac76c, konzepte/percentiles.md:cd20ed0eca37, konzepte/star-schema.md:757125ed1579, konzepte/fragen-kap-01-02.md:34d42566cb01]
-stand: 2026-11-26
+erzeugt_aus: [konzepte/entscheidungskette.md:e790ccbcf4c9, konzepte/big-data-5v.md:623805e0ce1d, konzepte/distributed-vs-single-node.md:fbfaa3586b67, konzepte/kap-02.md:048fda0e6ac9, konzepte/fault-vs-failure.md:d3986e698565, konzepte/batch-vs-stream.md:b369d96514c9, konzepte/timeliness.md:87b829edc18e, konzepte/scalability.md:6c2649674631, konzepte/scaling-up-vs-scaling-out.md:86b3c54a6b78, konzepte/response-time.md:b002fd4dd734, konzepte/maintainability.md:6409b0470fb5, konzepte/simplicity.md:cb97c1c74e69, konzepte/operational-vs-analytical-systems.md:cb46e2f0659b, konzepte/load.md:b53d7df111f0, konzepte/fault-tolerance.md:e02dd6e95d1d, konzepte/column-oriented-storage.md:890405d446b6, konzepte/crisp-dm.md:cb96496dd6a2, konzepte/system-of-record.md:c7c2af8bc15d, konzepte/derived-data.md:954fed77a4e9, konzepte/skalenniveau-und-kenngroessen.md:e2bec2a23f93, konzepte/percentiles.md:c58fd8d780dc, konzepte/star-schema.md:8e008044732e, konzepte/fragen-kap-01-02.md:54102833fedc]
+stand: 2026-11-27
 version: 1
 ---
 

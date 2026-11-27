@@ -12,10 +12,10 @@ status: Kern
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/vergleiche/operational-vs-analytical-systems.md:c32b1ee9e6c0]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (vergleiche/operational-vs-analytical-systems.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (vergleiche/operational-vs-analytical-systems.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Operational vs. Analytical Systems (OLTP vs. OLAP)
 

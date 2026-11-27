@@ -12,10 +12,10 @@ status: Ausblick
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/fault-tolerance.md:577fbee13808]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/fault-tolerance.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/fault-tolerance.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Fault Tolerance
 

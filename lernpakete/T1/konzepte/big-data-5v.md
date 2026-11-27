@@ -11,11 +11,11 @@ klausurrelevant: true
 status: Pflicht
 sprache: de-AT
 erzeugt: true
-erzeugt_aus: [wiki/konzepte/big-data-5v.md:039ce49b124c]
-stand: 2026-11-26
+erzeugt_aus: [wiki/konzepte/big-data-5v.md:4427c18fced3]
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/big-data-5v.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/big-data-5v.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Big Data und die 5V
 
@@ -25,7 +25,7 @@ Big Data liegt vor, wenn Menge, Geschwindigkeit oder Vielfalt der Daten die Vera
 
 ## Warum das wichtig ist
 
-Das Wort „Big Data“ löst Reflexe aus: Cluster, Streaming, neue Plattform. Die 5V bremsen den Reflex, weil sie Fragen stellen statt Urteile zu fällen. Welches V ist in diesem Szenario wirklich relevant, und was folgt daraus noch nicht? Die drei ersten V gehen auf Laney (2001) zurück; Veracity und Value kamen später aus der Praxis dazu. Im Buch kommen die V nicht vor; es spricht von Last, Datenmenge und Anforderungen.
+Das Wort „Big Data“ löst Reflexe aus: Cluster, Streaming, neue Plattform. Die 5V bremsen den Reflex, weil sie Fragen stellen statt Urteile zu fällen. Welches V ist in diesem Szenario wirklich relevant, und was folgt daraus noch nicht? Die drei ersten V gehen auf Laney (2001) zurück; Veracity ergänzte IBM um 2012 als Maß für die Unsicherheit der Daten, Value kam aus der Praxis dazu. Im Buch kommen die V nicht vor; es spricht von Last, Datenmenge und Anforderungen. Was wir unter Veracity fassen, behandelt das Buch unter Reliability (Kap. 2 S. 43: ein Kassenausfall ist ein Fault) und Integrity (Kap. 13 S. 571: keine Daten verloren, keine doppelt).
 
 ## Wie es funktioniert
 
@@ -34,14 +34,14 @@ Das Wort „Big Data“ löst Reflexe aus: Cluster, Streaming, neue Plattform. D
 | Volume | Menge | Wie viele Zeilen, wie viele Gigabyte, wie schnell wächst es? |
 | Velocity | Datenrate, also wie schnell Daten entstehen | Wie viele Ereignisse je Sekunde oder je Tag? |
 | Variety | Vielfalt der Quellen und Formate | Tabellen, Ereignisströme, Freitext, Bilder? |
-| Veracity | Verlässlichkeit | Lücken, Duplikate, Ausfälle, gemischte Formate? |
+| Veracity | Richtigkeit und Vertrauenswürdigkeit der Daten | Lücken, Duplikate, Fehlbuchungen, unklare Herkunft? |
 | Value | Nutzen | Welche Entscheidung wird damit besser? |
 
 Zwei Dinge sind getrennt zu halten. Erstens: Velocity ist die Datenrate und nicht die Frage, wie schnell ein Ergebnis gebraucht wird; das ist eine Anforderung der Anwendung ([Timeliness](timeliness.md)). Zweitens: Ob Daten „big“ sind, ist relativ zur Verarbeitungskapazität angemessener Werkzeuge. Eine Datenbank oder eine spaltenorientierte Engine verarbeitet 50 Mio. Zeilen auf einem Rechner; dass eine Tabellenkalkulation daran scheitert, macht die Daten nicht zu Big Data ([Verteilt vs. Single-Node](distributed-vs-single-node.md)).
 
 ## Am Modehändler
 
-Größenordnungen, keine Messwerte: rund 1,9 Mio. Umsatzzeilen je Quartal für 42 Filialen, Historie seit 2019 etwa 50 Mio. Zeilen (Volume); Kassenbons entstehen laufend, rund 20.000 Zeilen je Tag (Velocity); Stammdaten, Aktionskalender, Wetter, Rezensionen (Variety); Kassenausfälle, Retouren, Lücken (Veracity); bessere Bestellmengen, weniger Stockouts, weniger Abverkauf (Value). Für die nächtliche Prognose sind Volume und Variety relevant, erzwingen aber keine Verteilung. Für die Bestandsanzeige ist keines der V entscheidend, sondern die Aktualitätsanforderung.
+Größenordnungen, keine Messwerte: rund 1,9 Mio. Umsatzzeilen je Quartal für 42 Filialen, Historie seit 2019 etwa 50 Mio. Zeilen (Volume); Kassenbons entstehen laufend, rund 20.000 Zeilen je Tag (Velocity); Stammdaten, Aktionskalender, Wetter, Rezensionen (Variety); Lücken durch Kassenausfälle, Duplikate, Fehlbuchungen (Veracity); bessere Bestellmengen, weniger Stockouts, weniger Abverkauf (Value). Für die nächtliche Prognose sind Volume und Variety relevant, erzwingen aber keine Verteilung. Für die Bestandsanzeige ist keines der V entscheidend, sondern die Aktualitätsanforderung.
 
 ## Trade-offs und Entscheidungsregel
 

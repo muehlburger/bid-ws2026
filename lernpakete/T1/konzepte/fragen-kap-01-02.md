@@ -12,10 +12,10 @@ status: Ausblick
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/fragen/fragen-kap-01-02.md:0f043fcc9192]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (fragen/fragen-kap-01-02.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (fragen/fragen-kap-01-02.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Selbsttest Kapitel 1 und 2
 

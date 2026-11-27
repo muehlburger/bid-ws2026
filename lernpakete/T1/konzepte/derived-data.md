@@ -12,10 +12,10 @@ status: Kern
 sprache: de-AT
 erzeugt: true
 erzeugt_aus: [wiki/konzepte/derived-data.md:503a8d032fd8]
-stand: 2026-11-26
+stand: 2026-11-27
 version: 1
 ---
-<!-- Auszug aus dem BID-Wiki (konzepte/derived-data.md), erzeugt am 2026-11-26 mit build_lernpaket.py. Nicht von Hand ändern. -->
+<!-- Auszug aus dem BID-Wiki (konzepte/derived-data.md), erzeugt am 2026-11-27 mit build_lernpaket.py. Nicht von Hand ändern. -->
 
 # Derived Data
 

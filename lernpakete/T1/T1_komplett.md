@@ -10,8 +10,8 @@ quellen: []
 klausurrelevant: true
 sprache: de-AT
 erzeugt: true
-erzeugt_aus: [README.md:84505ba7af5d, begriffe.md:7f067ce3ced8, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:31e0b7928e57, konzepte/big-data-5v.md:68d5fa99749f, konzepte/distributed-vs-single-node.md:7e7fcde50e94, konzepte/kap-02.md:4920a7f1cb94, konzepte/fault-vs-failure.md:df9dbd04b889, konzepte/batch-vs-stream.md:ec73ca1ce481, konzepte/timeliness.md:fc858851d931, konzepte/scalability.md:f83386234fca, konzepte/scaling-up-vs-scaling-out.md:048b74476a25, konzepte/response-time.md:eb393a0a17d5, konzepte/maintainability.md:36316b580247, konzepte/simplicity.md:812aff8023a1, konzepte/operational-vs-analytical-systems.md:f8243ae05407, konzepte/crisp-dm.md:eb9a9d95aea6, konzepte/system-of-record.md:4dab83b81495, konzepte/derived-data.md:6bdd70fbe5b0, konzepte/skalenniveau-und-kenngroessen.md:b528270ac76c, konzepte/percentiles.md:cd20ed0eca37, aufgaben.md:7cd44f257c04, uebung-notebook.md:0e377b2c4afe, so-fragt-die-klausur.md:8790181296a9, prompts.md:e87be97311a9]
-stand: 2026-11-26
+erzeugt_aus: [README.md:84505ba7af5d, begriffe.md:0dc0f61e331d, konzepte.md:06c35163d329, konzepte/entscheidungskette.md:e790ccbcf4c9, konzepte/big-data-5v.md:623805e0ce1d, konzepte/distributed-vs-single-node.md:fbfaa3586b67, konzepte/kap-02.md:048fda0e6ac9, konzepte/fault-vs-failure.md:d3986e698565, konzepte/batch-vs-stream.md:b369d96514c9, konzepte/timeliness.md:87b829edc18e, konzepte/scalability.md:6c2649674631, konzepte/scaling-up-vs-scaling-out.md:86b3c54a6b78, konzepte/response-time.md:b002fd4dd734, konzepte/maintainability.md:6409b0470fb5, konzepte/simplicity.md:cb97c1c74e69, konzepte/operational-vs-analytical-systems.md:cb46e2f0659b, konzepte/crisp-dm.md:cb96496dd6a2, konzepte/system-of-record.md:c7c2af8bc15d, konzepte/derived-data.md:954fed77a4e9, konzepte/skalenniveau-und-kenngroessen.md:e2bec2a23f93, konzepte/percentiles.md:c58fd8d780dc, aufgaben.md:e3b8c3b52338, uebung-notebook.md:0e377b2c4afe, so-fragt-die-klausur.md:8790181296a9, prompts.md:e87be97311a9]
+stand: 2026-11-27
 version: 1
 ---
 # Lernpaket T1 in einer Datei
@@ -253,7 +253,7 @@ Big Data liegt vor, wenn Menge, Geschwindigkeit oder Vielfalt der Daten die Vera
 
 ## Warum das wichtig ist
 
-Das Wort „Big Data“ löst Reflexe aus: Cluster, Streaming, neue Plattform. Die 5V bremsen den Reflex, weil sie Fragen stellen statt Urteile zu fällen. Welches V ist in diesem Szenario wirklich relevant, und was folgt daraus noch nicht? Die drei ersten V gehen auf Laney (2001) zurück; Veracity und Value kamen später aus der Praxis dazu. Im Buch kommen die V nicht vor; es spricht von Last, Datenmenge und Anforderungen.
+Das Wort „Big Data“ löst Reflexe aus: Cluster, Streaming, neue Plattform. Die 5V bremsen den Reflex, weil sie Fragen stellen statt Urteile zu fällen. Welches V ist in diesem Szenario wirklich relevant, und was folgt daraus noch nicht? Die drei ersten V gehen auf Laney (2001) zurück; Veracity ergänzte IBM um 2012 als Maß für die Unsicherheit der Daten, Value kam aus der Praxis dazu. Im Buch kommen die V nicht vor; es spricht von Last, Datenmenge und Anforderungen. Was wir unter Veracity fassen, behandelt das Buch unter Reliability (Kap. 2 S. 43: ein Kassenausfall ist ein Fault) und Integrity (Kap. 13 S. 571: keine Daten verloren, keine doppelt).
 
 ## Wie es funktioniert
 
@@ -262,14 +262,14 @@ Das Wort „Big Data“ löst Reflexe aus: Cluster, Streaming, neue Plattform. D
 | Volume | Menge | Wie viele Zeilen, wie viele Gigabyte, wie schnell wächst es? |
 | Velocity | Datenrate, also wie schnell Daten entstehen | Wie viele Ereignisse je Sekunde oder je Tag? |
 | Variety | Vielfalt der Quellen und Formate | Tabellen, Ereignisströme, Freitext, Bilder? |
-| Veracity | Verlässlichkeit | Lücken, Duplikate, Ausfälle, gemischte Formate? |
+| Veracity | Richtigkeit und Vertrauenswürdigkeit der Daten | Lücken, Duplikate, Fehlbuchungen, unklare Herkunft? |
 | Value | Nutzen | Welche Entscheidung wird damit besser? |
 
 Zwei Dinge sind getrennt zu halten. Erstens: Velocity ist die Datenrate und nicht die Frage, wie schnell ein Ergebnis gebraucht wird; das ist eine Anforderung der Anwendung ([Timeliness](#timeliness)). Zweitens: Ob Daten „big“ sind, ist relativ zur Verarbeitungskapazität angemessener Werkzeuge. Eine Datenbank oder eine spaltenorientierte Engine verarbeitet 50 Mio. Zeilen auf einem Rechner; dass eine Tabellenkalkulation daran scheitert, macht die Daten nicht zu Big Data ([Verteilt vs. Single-Node](#distributed-vs-single-node)).
 
 ## Am Modehändler
 
-Größenordnungen, keine Messwerte: rund 1,9 Mio. Umsatzzeilen je Quartal für 42 Filialen, Historie seit 2019 etwa 50 Mio. Zeilen (Volume); Kassenbons entstehen laufend, rund 20.000 Zeilen je Tag (Velocity); Stammdaten, Aktionskalender, Wetter, Rezensionen (Variety); Kassenausfälle, Retouren, Lücken (Veracity); bessere Bestellmengen, weniger Stockouts, weniger Abverkauf (Value). Für die nächtliche Prognose sind Volume und Variety relevant, erzwingen aber keine Verteilung. Für die Bestandsanzeige ist keines der V entscheidend, sondern die Aktualitätsanforderung.
+Größenordnungen, keine Messwerte: rund 1,9 Mio. Umsatzzeilen je Quartal für 42 Filialen, Historie seit 2019 etwa 50 Mio. Zeilen (Volume); Kassenbons entstehen laufend, rund 20.000 Zeilen je Tag (Velocity); Stammdaten, Aktionskalender, Wetter, Rezensionen (Variety); Lücken durch Kassenausfälle, Duplikate, Fehlbuchungen (Veracity); bessere Bestellmengen, weniger Stockouts, weniger Abverkauf (Value). Für die nächtliche Prognose sind Volume und Variety relevant, erzwingen aber keine Verteilung. Für die Bestandsanzeige ist keines der V entscheidend, sondern die Aktualitätsanforderung.
 
 ## Trade-offs und Entscheidungsregel
 
@@ -1701,7 +1701,7 @@ Erst lesen, wenn Phase 3 abgeschlossen ist.
 
 - **Feld 1 Problem:** Die Filialleitung bestellt wöchentlich je Artikel nach; zu viel bindet Kapital und endet im Abverkauf, zu wenig erzeugt Stockouts. Gesucht ist eine Absatzprognose je Filiale und Artikel für die nächsten 7 Tage, die die Bestellmenge vorschlägt; zusätzlich sollen Tage mit auffällig fehlendem Absatz (möglicher Stockout oder Kassenausfall) markiert werden.
 - **Feld 2 Daten:** Variantenumsatz je Tag, Filiale und Variante (Menge, Preis, Aktionskennzeichen) seit mindestens zwei Jahren; Stammdaten (Filiale, Abteilung, Warengruppe, Marke, Saison); Aktions- und Feiertagskalender; optional Wetter je Filialort. Granularität Tag, Filiale, Variante, weil Bestellung und Stockout auf dieser Ebene entstehen. Zwei volle Jahre, damit jede Saison zweimal vorkommt.
-- **Feld 3 Big-Data-Eigenschaften:** Volume ja (mehrere Millionen Zeilen pro Jahr, wächst täglich), aber allein kein Grund für ein verteiltes System; Variety ja (Transaktionen, Stammdaten, Kalender, Wetter); Veracity ja (Kassenausfälle, Retouren, fehlende Intervalle); Velocity: Daten entstehen laufend, aber die Anwendung braucht das Ergebnis erst am nächsten Morgen; entscheidend ist die Aktualitätsanforderung, nicht die Datenrate. Nur eine Echtzeit-Bestandsanzeige bräuchte Streaming. Konsequenz: Die einfachste ausreichende Lösung ist eine nächtliche Batch-Pipeline auf einem Rechner; ob mehr nötig ist, begründet Feld 8 in T5.
+- **Feld 3 Big-Data-Eigenschaften:** Volume ja (mehrere Millionen Zeilen pro Jahr, wächst täglich), aber allein kein Grund für ein verteiltes System; Variety ja (Transaktionen, Stammdaten, Kalender, Wetter); Veracity ja (Lücken durch Kassenausfälle, fehlende Intervalle, Duplikate); Velocity: Daten entstehen laufend, aber die Anwendung braucht das Ergebnis erst am nächsten Morgen; entscheidend ist die Aktualitätsanforderung, nicht die Datenrate. Nur eine Echtzeit-Bestandsanzeige bräuchte Streaming. Konsequenz: Die einfachste ausreichende Lösung ist eine nächtliche Batch-Pipeline auf einem Rechner; ob mehr nötig ist, begründet Feld 8 in T5.
 
 **Vier Fragen, die fast immer kommen:** Welche Granularität? Die, auf der die Entscheidung fällt, aggregierbar. Velocity ja, also Streaming? Nein, die Aktualitätsanforderung entscheidet. Wie viel Historie? Mindestens zwei volle Jahre. Ist Wetter Pflicht? Nein, erst prüfen, ob es die Prognose verbessert; jede Quelle kostet Integration.
 
